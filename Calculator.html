@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    
+
+
+<link rel="stylesheet" href="mpg.css">
+<style>
+    h1{ color: yellow;}
+    p{ color:yellow;}
+    img{width:150px;
+    border-radius: 50px;
+    float: right;
+    margin-right:20 px;}
+    body{ background-image:url("index_files/road.jpg");
+     background-repeat:no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     
+
+    }
+</style>
+
+</head>
+
+<body>
+       
+             
+<main>
+   
+     <img src="index_files/milescalculator.png" >
+<h1> Miles Per Gallon Calculator</h1>
+<script>
+"use strict";
+
+// get miles driven from user
+const miles = parseInt(prompt("Enter miles driven"));
+
+// get gallons used from user
+const gallons = parseInt(prompt("Enter gallons of gas consumed"));
+// calculate mpg
+const mpg = parseFloat(miles/gallons);
+
+// display results
+const html = `<p><label>Miles: </label>${miles}</p>
+<p><label>Gallons: </label>${gallons}</p>
+<p><label>Miles per gallon: </label>${mpg.toFixed(2)}</p>`;
+document.write(html);
+</script>
+</main>
+
+    
+</body>
+</html>
